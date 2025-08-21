@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <script src="javascript.js" defer></script>
+    <title>bill generator</title>
+</head>
+<body>
+    <header>Bill Split</header>
+    <div class="bill-container">
+        <div class="bill-input-container">
+            <p>Bill</p>
+            <div class="bill-input">
+                <p>&#8377;</p>
+                <input type="number">
+            </div>
+            <p>Select Tip</p>
+            <div class="auto-select disabled">
+                <button>5%</button>
+                <button>10%</button>
+                <button>15%</button>
+                <button>25%</button>
+                <button>50%</button>
+                <button>75%</button>
+            </div>
+            <input type="number" class="input custom-tip" placeholder="Custom Tip" disabled>
+            <p>Number Of People</p>
+            <input type="number" class="input no-of-people" placeholder="No of people"  disabled>
+            <button class="Generate-bill " disabled>Generate Bill</button>
+        </div>
+        <div class="bill-output-container">
+            <p>Tip Amount <span class="Tip-Amount"></span></p>
+            <p>Total <span class="Total"></span></p>
+            <p>Each Pertion Bill <span class="Each-Pertion-Bill"></span></p>
+            <button class="Reset" disabled>Reset</button>
+        </div>
+    </div>
+</body>
+</html>

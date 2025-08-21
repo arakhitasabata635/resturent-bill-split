@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+header{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    padding-block: 15px;
+    box-shadow: 0 0 3px 3px rgb(168, 164, 164);
+}
+.bill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 20px;
+    padding-inline: 20px;
+}
+.bill-container div{
+    width: 350px;
+}
+.bill-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: blueviolet;
+}
+.bill-input-container input{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.bill-input{
+    padding: 0 7px;
+    display: flex;
+    border: 3px solid rgb(194, 187, 187);
+}
+.bill-input input{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: blueviolet;
+}
+.auto-select{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 10px;
+}
+.auto-select.disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+.auto-select button{
+    padding: 7px 0;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.auto-select.disabled button{
+    cursor: not-allowed;
+}
+
+.auto-select button.selected{
+    outline: 5px solid orange;
+}
+.input{
+    background-color: rgb(197, 195, 195);
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: blueviolet;
+}
+.input::placeholder{
+    font-weight: 500;
+    font-size: 16px;
+}
+.Generate-bill{
+    padding-block: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.bill-output-container{
+    border-radius: 15px;
+    background-color: #080887f7;
+    color: white;
+    padding:70px 30px 40px;
+}
+.bill-output-container p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:65px;
+}
+.bill-output-container p span{
+    font-size: 24px;
+    color: blueviolet;
+}
+.Reset{
+    padding-block: 5px;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input:disabled{
+    cursor: not-allowed;
+}
+.Generate-bill:disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}    
+
+
+@media (max-width:770px) {
+    .bill-container{
+        flex-direction: column;
+    }
+}
